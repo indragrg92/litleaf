@@ -1,0 +1,14 @@
+
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+body {
+    background: url( './../img/body-bg.svg' );
+    background-color: #F3F3F3;
+    overflow-x: hidden;
+}
+
+@import './fonts';
+@import './mixins/round_shape';
+@import './layouts/header';
+@import './layouts/footer';
+@import './media';
