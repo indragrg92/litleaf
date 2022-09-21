@@ -33,6 +33,10 @@ header {
       }
 
       .navbar-brand {
+         
+         margin-right: 0;
+         width: 22%;
+
          & > img {
             max-width: 124px;
          }

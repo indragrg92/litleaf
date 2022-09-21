@@ -5,6 +5,24 @@
    padding-top: 110px;
    padding-bottom: 110px;
 
+   .roadmap-text-left {
+      font-family: 'Ultra';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 199.451px;
+      line-height: 239px;
+      text-align: center;
+      letter-spacing: 0.886448px;
+      text-transform: capitalize;
+      color: #2F5B0C;
+      opacity: 0.05;
+      transform: rotate(-90deg);
+      position: absolute;
+      left: -28%;
+      top: 42%;
+      z-index: 1;
+   }
+
    &:before {
       content: "";
       background: url(./../img/roadmap-top-bg.png);
@@ -73,7 +91,7 @@
             top: 0;
             display: block;
             width: 104px;
-            height: 100%;
+            height: 106%;
             background-image: url( './../img/timeline-tree-bg.png' );
             background-repeat: no-repeat;
             background-size: contain;
@@ -81,19 +99,6 @@
          }
 
          li {
-
-            &:nth-child(1) {
-               padding-top: 95px;
-            }
-            &:nth-child(2) {
-               margin-top: -25px;
-            }
-            &:nth-child(3) {
-               margin-top: 50px;
-            }
-            &:nth-child(4) {
-               margin-top: -30px;
-            }
 
             &:after {
                content: "";
@@ -110,7 +115,65 @@
                border: 3px solid #000000;
                border-radius: 83.3133px;
                padding: 75px 96px 66px 48px;
+               box-shadow: -10.18px 8px #000;
                position: relative;
+
+               &:after {
+                  content: "";
+                  position: absolute;
+                  right: 8px;
+                  bottom: -1px;
+                  background-image: url(./../img/roadmap-leaf.png);
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  border-bottom-right-radius: 50%;
+                  z-index: 1;
+                  width: 120px;
+                  height: 120px;
+               }
+
+               .roadmap-timeline-line {
+                  position: relative;
+
+                  &:before {
+                     position: absolute;
+                     right: -152%;
+                     top: -51px;
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                     background: #fff;
+                     z-index: 10;
+                     width: 117.41px;
+                     height: 117.41px;
+                     border: 3px solid #000;
+                     border-radius: 50%;
+                     font-family: "Ultra";
+                     font-style: normal;
+                     font-weight: 400;
+                     font-size: 49.4269px;
+                     line-height: 119.77%;
+                     text-align: center;
+                     letter-spacing: .219675px;
+                     text-transform: capitalize;
+                     color: #fff;
+                     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+                     box-shadow: 0px 8.45px #000;
+                  }
+                  &:after {
+                     content: "";
+                     width: 237.4px;
+                     height: 5px;
+                     position: absolute;
+                     left: 133%;
+                     top: 38px;
+                     transform: rotate(-13.61deg);
+                     background-image: linear-gradient(to right, #333 40%, rgba(255, 255, 255, 0) 20%);
+                     background-position: top;
+                     background-size: 20px 5px;
+                     background-repeat: repeat-x;
+                  }
+               }
 
                .roadmap-timeline-img {
                   position: absolute;
@@ -152,8 +215,83 @@
                &.direction-r {
                   float: right;
                }
-
                
+            }
+
+            &:nth-child(1) {
+               padding-top: 95px;
+
+               .roadmap-timeline {
+                  .roadmap-timeline-line {
+                     &:before {
+                        content: "01";
+                     }
+                  }
+               }
+            }
+            &:nth-child(2) {
+               margin-top: -25px;
+
+               .roadmap-timeline {
+                  &:after {
+                     background-image: url(./../img/roadmap-leaf-sm.png);
+                     width: 122px;
+                     height: 107px;
+                     border-bottom-right-radius: 72%;
+                     bottom: -1px;
+                     right: -4px;
+                  }
+
+                  .roadmap-timeline-line {
+                     &:before {
+                        content: "02";
+                        left: -139%;
+                        top: -42px;
+                     }
+                     &:after {
+                        left: -110%;
+                        transform: rotate(-172.96deg);
+                     }
+                  }
+               }
+            }
+            &:nth-child(3) {
+               margin-top: 50px;
+
+               .roadmap-timeline {
+                  .roadmap-timeline-line {
+                     &:before {
+                        content: "03";
+                     }
+                  }
+               }
+            }
+            &:nth-child(4) {
+               margin-top: -30px;
+
+               .roadmap-timeline {
+
+                  .roadmap-timeline-line {
+                     &:before {
+                        content: "04";
+                        left: -139%;
+                        top: -42px;
+                     }
+                     &:after {
+                        left: -110%;
+                        transform: rotate(-172.96deg);
+                     }
+                  }
+
+                  &:after {
+                     background-image: url(./../img/roadmap-leaf-sm.png);
+                     width: 122px;
+                     height: 107px;
+                     border-bottom-right-radius: 72%;
+                     bottom: -1px;
+                     right: -4px;
+                  }
+               }
             }
          }
       }
