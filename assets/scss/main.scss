@@ -72,9 +72,9 @@ h4 {
    }
 }
 
-h5 {}
+// h5 {}
 
-h6 {}
+// h6 {}
 
 @import './mixins/nft_circle';
 @import './mixins/nft_circle_blur';
@@ -89,4 +89,5 @@ h6 {}
 @import './components/nft_community';
 @import './components/roadmap';
 @import './components/milestone';
+@import './components/our_team';
 @import './media';

@@ -1,0 +1,116 @@
+.our-team {
+   position: relative;
+   padding-top: 175px;
+
+   .our-team-overlay {
+      background-image: url( './../img/yellow-bg.png' );
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+   }
+
+   .our-team-title {
+      text-align: center;
+      h4 {
+         font-family: 'Ultra';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 40px;
+         line-height:48px;
+         letter-spacing: 0.819829px;
+         text-transform: capitalize;
+         color: #2F5B0C;
+      }
+      h2 {
+         font-family: 'Ultra';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 120px;
+         line-height: 144px;
+         text-align: center;
+         letter-spacing: 0.533333px;
+         text-transform: capitalize;
+         color: #FFFFFF;
+      }
+   }
+
+   .our-team-list {
+
+      margin-top: 94px;
+
+      .our-team-img {
+         border-radius: 60px;
+
+         &.has-shadow {
+            box-shadow: 12.75px 14.92px #000;
+         }
+
+         & > img {
+            width: 100%;
+         }
+      }
+
+      .our-team-content {
+
+         margin-top: 52px;
+         text-align: center;
+
+         h4 {
+            font-family: 'Ultra';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 33px;
+            line-height: 40px;
+            letter-spacing: 0.819829px;
+            text-transform: capitalize;
+            color: #2F5B0C;
+            margin-bottom: 0;
+         }
+
+      }
+
+      .social-links {
+
+         text-align: center;
+         margin-top: 32px;
+
+         ul {
+            list-style:none;
+            margin: 0;
+            padding: 0;
+
+            li {
+               display: inline-block;
+
+               &:not(:last-child) {
+                  margin-right: 18px;
+               }
+
+               a {
+                  width: 57px;
+                  height: 57px;
+                  background: #FFFFFF;
+                  border: 2px solid #000000;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  text-decoration: none;
+
+                  i {
+                     font-size: 22px;
+                     color: #000000;
+                  }
+               }
+            }
+         }
+      }
+
+   }
+}
