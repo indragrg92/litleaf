@@ -1,0 +1,184 @@
+.nft-reveal {
+
+   margin-top: -160px;
+   position: relative;
+   z-index: 1;
+
+   &:before {
+      content: "";
+      background: url('./../img/nft-reveal-top-bg.png');
+      // background: url('./../img/nft-reveal-bg.png');
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: 100%;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+   }
+
+   &:after {
+      content: "";
+      background: url('./../img/nft-reveal-bottom-bg.png');
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: 100%;
+      position: absolute;
+      width: 100%;
+      height: 15%;
+      z-index: -1;
+   }
+   
+
+   .nft-circle {
+      @include roundShape();
+      transform: translate(-50%, -140%);
+   }
+
+   .nft-circle-blur {
+      @include roundShapeBlur();
+      transform: translate(-50%, -250%);
+   }
+
+   .join-wailist {
+      position: relative;
+
+      .join-wailist-leaf {
+         position: relative;
+         left: 306px;
+         top: -100px;
+         width: 50%;
+      }
+
+      .joinbox-form {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, 42%);
+         width: 100%;
+
+         .joinbox-wrap {
+            display: flex;
+            max-width: 666px;
+            margin: 0 auto;
+
+            &>input {
+               background: #FFFFFF;
+               flex: 1;
+               padding : 32px 10px 38px 43px;
+               font-family: 'DM Sans';
+               font-style: normal;
+               font-weight: 500;
+               font-size: 20px;
+               line-height: 26px;
+               letter-spacing: 0.533333px;
+               text-transform: capitalize;
+               color: #000000;
+               border-style: solid;
+               border-color: #000000;
+               -webkit-border-top-left-radius: 100px;
+               -webkit-border-bottom-left-radius: 100px;
+               border-top-left-radius: 100px;
+               border-bottom-left-radius: 100px;
+               border-right: 0;
+            }
+
+            &>button {
+               padding: 10px 12px;
+               background-color: #FFFFFF;
+               border-style: solid;
+               border-color: #000000;
+               -webkit-border-top-right-radius: 100px;
+               -webkit-border-bottom-right-radius: 100px;
+               -moz-border-radius-topright: 100px;
+               -moz-border-radius-bottomright: 100px;
+               border-top-right-radius: 100px;
+               border-bottom-right-radius: 100px;
+               border-left: 0;
+               cursor: pointer;
+
+               span {
+                  // margin-left: 50px;
+                  padding: 24px 45px;
+                  border-radius: 100px;
+                  font-family: 'Ultra';
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 20px;
+                  line-height: 24px;
+                  text-align: center;
+                  letter-spacing: 0.819829px;
+                  text-transform: capitalize;
+                  color: #2F5B0C;
+                  background-color: #FFD166;
+
+                  &:hover {
+                     background-color: #FFD166;
+                  }
+
+               }
+            }
+         }
+      }
+
+      .spiral-arrow {
+         position: absolute;
+         right: 70px;
+         top: 380px;
+      }
+
+   }
+
+   .nft-reveal-title {
+      position: relative;
+      margin-top: 0px;
+
+      h4 {
+         font-family: 'Ultra';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 58px;
+         line-height: 69px;
+         letter-spacing: 0.491367px;
+         text-transform: capitalize;
+         color: #000000;
+
+         background: #FFFFFF;
+         border: 3px solid #000000;
+         border-radius: 50%;
+
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         width: 180px;
+         height: 180px;
+         margin: 0;
+      }
+
+      h1 {
+         font-family: 'Ultra';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 164px;
+         line-height: 221px;
+         text-align: center;
+         letter-spacing: -2.18px;
+         text-transform: capitalize;
+         color: #2F5B0C;
+         margin-top: -105px;
+         margin-left: -72px;
+      }
+   }
+
+   .reveal-images {
+      ul {
+         list-style: none;
+         padding: 0;
+         margin: -1px;
+
+         li {
+            display: inline;
+         }
+      }
+   }
+}

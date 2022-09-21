@@ -1,0 +1,160 @@
+.nft-community {
+
+   position: relative;
+   padding-top: 120px;
+
+   .nft-community-top-overlay {
+      height: 167px;
+      width: 100%;
+      background: linear-gradient(180deg, rgba(255, 216, 74, 0.87) 0%, #FFBF2D 100%),linear-gradient(180deg, rgba(255, 216, 74, 0.87) 0%, #FFBF2D 100%);
+      filter: blur(25px);
+      position: absolute;
+      top: -45px;
+   }
+
+   .nft-community-title {
+
+      position: relative;
+      text-align: center;
+
+      h4 {
+         font-family: 'Ultra';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 40px;
+         line-height: 48px;
+         letter-spacing: 0.819829px;
+         text-transform: capitalize;
+         color: #2F5B0C;
+         margin-bottom: 25px;
+      }
+      h2 {
+         font-family: 'Ultra';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 120px;
+         line-height: 127px;
+         text-align: center;
+         letter-spacing: 0.533333px;
+         text-transform: capitalize;
+         color: #FFFFFF;
+         margin-bottom: 42px;
+      }
+      h6 {
+         font-family: 'DM Sans';
+         font-style: normal;
+         font-weight: 500;
+         font-size: 20px;
+         line-height: 38px;
+         text-align: center;
+         letter-spacing: 0.533333px;
+         color: #000000;
+         max-width: 75%;
+         margin: 0 auto;
+      }
+
+      .community-spiral-arrow{
+         content: '';
+         background-image: url( './../img/community-spiral-arrow.svg' );
+         background-repeat: no-repeat;
+         width: 143px;
+         height: 191px;
+         position: absolute;
+         right: -3%;
+         bottom: -15%;
+      }
+   }
+
+   .nft-community-lists {
+      margin-top: 156px;
+
+      .nft-community-list {
+         position: relative;
+         margin-left: 18px;
+         background: #FFFFFF;
+         border: 3px solid #000000;
+         border-radius: 100px;
+         padding: 155px 183px 148px 90px;
+         box-shadow: -4px 15px #000;
+         margin-bottom: 125px;
+         height: 432px;
+         border: 4px solid #000;
+
+         &:after {
+            content: "";
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: contain;
+            border-bottom-right-radius: 40%;
+            z-index: 1;
+         }
+
+         &.list-1 {
+            &:after {
+               background-image: url( './../img/list-leaf-bg-1.png' );
+               width: 215px;
+               bottom: -5px;
+               right: -1px;
+               height: 243px;
+            }
+         }
+         &.list-2 {
+            &:after {
+               background-image: url( './../img/list-leaf-bg-2.png' );
+               right: -4px;
+               bottom: -3px;
+               width: 221px;
+               height: 299px;
+            }
+         }
+         &.list-3 {
+            &:after {
+               background-image: url( './../img/list-leaf-bg-1.png' );
+               width: 215px;
+               bottom: -5px;
+               right: -1px;
+               height: 243px;
+            }
+         }
+         &.list-4 {
+            &:after {
+               background-image: url( './../img/list-leaf-bg-2.png' );
+               right: -4px;
+               bottom: -3px;
+               width: 221px;
+               height: 299px;
+            }
+         }
+
+         .nft-circle {
+            @include roundShapeBlur();
+            width: 700px;
+            height: 600px;
+            z-index: -1;
+         }
+
+         .nft-community-list-img {
+            position: absolute;
+            top: -75px;
+            left: 90px;
+            width: 137px;
+            height: 137px;
+            border-radius: 50%;
+            box-shadow: 1px 12px #000;
+         }
+
+         .nft-community-list-content {
+            h6 {
+               font-family: 'DM Sans Medium';
+               font-style: normal;
+               font-weight: 500;
+               font-size: 20px;
+               line-height: 32px;
+               letter-spacing: 0.533333px;
+               color: #000000;
+               margin: 0;
+            }
+         }
+      }
+   }
+}

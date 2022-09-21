@@ -1,0 +1,17 @@
+@mixin roundShape() {
+
+    width: 655px;
+    height: 655px;
+    background: #F6F6F6;
+    border: 6px solid #315A0A;
+    border-radius: 50%;
+    z-index: -2;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    // @media(max-width:992px) {
+    //     display: none;
+    // }
+}

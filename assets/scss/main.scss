@@ -1,14 +1,91 @@
-
 @import '../../node_modules/bootstrap/scss/bootstrap';
 
 body {
-    background: url( './../img/body-bg.svg' );
-    background-color: #F3F3F3;
-    overflow-x: hidden;
+   background-color: #FFBF2D;
+   overflow-x: hidden;
 }
 
 @import './fonts';
-@import './mixins/round_shape';
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: 'Ultra';
+   font-style: normal;
+}
+
+h1 {
+   font-weight: 400;
+   line-height: 221px;
+   text-align: center;
+   letter-spacing: -2.18px;
+   text-transform: capitalize;
+   color: #2F5B0C;
+   
+   @media(min-width: 1200px) {
+      font-size: 164px;
+   }
+}
+
+h2 {
+   font-weight: 400;
+   line-height: 119.77%;
+   text-align: center;
+   letter-spacing: 0.533333px;
+   text-transform: capitalize;
+   color: #FFFFFF;
+   margin: 0;
+   margin-top: -32px;
+
+   @media(min-width: 1200px) {
+      font-size: 120px;
+   }
+
+}
+
+h3 {
+   font-weight: 400;
+   line-height: 84px;
+   text-align: center;
+   letter-spacing: 0.533333px;
+   text-transform: capitalize;
+   color: #FFFFFF;
+
+   @media(min-width: 1200px) {
+      font-size: 70px;
+   }
+}
+
+h4 {
+   font-weight: 400;
+   line-height: 48px;
+   letter-spacing: 0.819829px;
+   text-transform: capitalize;
+   color: #2F5B0C;
+
+   @media(min-width: 1200px) {
+      font-size: 40px;
+   }
+}
+
+h5 {}
+
+h6 {}
+
+@import './mixins/nft_circle';
+@import './mixins/nft_circle_blur';
+@import './components/buttons.scss';
 @import './layouts/header';
 @import './layouts/footer';
+
+
+@import './components/herobanner';
+@import './components/nft_reveal';
+@import './components/club';
+@import './components/nft_community';
+@import './components/roadmap';
 @import './media';

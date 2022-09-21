@@ -2,3 +2,14 @@ DM Sans
 Ultra
 
 container - 1320px
+
+h1 - 184px;
+h2 - 120px;
+h3 - 70px
+h4 - 40px
+h5 - 25px
+h6 - 20px
+
+p - 16px
+
+57
