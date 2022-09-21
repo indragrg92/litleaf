@@ -1,0 +1,159 @@
+.milestone {
+   padding-top: 195px;
+   position: relative;
+
+   .milestone-overlay {
+      background-image: url( './../img/yellow-bg.png' );
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+   }
+
+   .milestone-title {
+
+      text-align: center;
+      position: relative;
+
+      h4 {
+         font-family: 'Ultra';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 40px;
+         line-height: 48px;
+         letter-spacing: 0.819829px;
+         text-transform: capitalize;
+         color: #2F5B0C;
+         margin-bottom: 8px;
+      }
+
+      h2 {
+         font-family: 'Ultra';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 120px;
+         line-height: 144px;
+         text-align: center;
+         letter-spacing: 0.533333px;
+         text-transform: capitalize;
+         color: #FFFFFF;
+      }
+
+      .milestone-logo {
+         position: absolute;
+         right: 3%;
+         top: 63%;
+      }
+
+   }
+
+   .milestone-lists {
+      margin-top: 157px;
+
+      .milestone-list {
+
+         margin-bottom: 115px;
+
+         .milestone-content {
+            background: #FFFFFF;
+            border: 4.05574px solid #000000;
+            border-radius: 112.632px;
+            padding: 69px 173px 74px 58px;
+            max-width: 546.38px;
+            box-shadow: -16px 11px #000;
+            position: relative;
+
+            &:after {
+               content: "";
+               position: absolute;
+               background-repeat: no-repeat;
+               background-size: contain;
+               border-bottom-right-radius: 52%;
+               background-image: url('./../img/milestone-leaf-sm.png');
+               bottom: 0px;
+               right: 8px;
+               width: 162px;
+               height: 194px;
+               z-index: 1;
+            }
+
+            h4 {
+               font-family: 'Ultra';
+               font-style: normal;
+               font-weight: 400;
+               font-size: 33.7978px;
+               line-height: 64px;
+               letter-spacing: 0.600706px;
+               color: #000000;
+               margin-bottom: 28px;
+            }
+
+            p {
+               font-family: 'DM Sans';
+               font-style: normal;
+               font-weight: 500;
+               font-size: 21.6306px;
+               line-height: 35px;
+               letter-spacing: 0.600706px;
+               color: #000000;
+               margin-bottom: 0;
+            }
+         }
+
+         &:nth-child(1) {
+            .milestone-content {
+               max-width: 658px;
+
+               &:after {
+                  border-bottom-right-radius: 55%;
+                  background-image: url('./../img/milestone-leaf-bg.png');
+                  bottom: -3px;
+                  right: 2px;
+                  width: 193px;
+                  height: 199px;
+               }
+            }
+         }
+         &:nth-child(even) {
+            .milestone-content {
+               float: right;
+            }
+
+            &:after {
+               content: "";
+               display: block;
+               height: 0;
+               clear:both;
+               visibility: hidden;
+            }
+         }
+         
+         .milestone-image {
+            text-align: center;
+         }
+
+         
+      }
+   }
+
+   .milestone-founder {
+
+      text-align: center;
+      max-width: 672px;
+      margin: 0 auto;
+
+      h6 {
+         font-family: 'DM Sans';
+         font-style: normal;
+         font-weight: 500;
+         font-size: 20px;
+         line-height: 32px;
+         text-align: center;
+         letter-spacing: 0.600706px;
+         color: #000000;
+      }
+   }
+}

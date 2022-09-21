@@ -2,6 +2,8 @@
    position: relative;
    background: #FFFDF0;
    margin-top: 190px;
+   padding-top: 110px;
+   padding-bottom: 110px;
 
    &:before {
       content: "";
@@ -13,7 +15,7 @@
       top: -130px;
       width: 100%;
       height: 139px;
-      z-index: -1;
+      z-index: 1;
    }
 
    &:after {
@@ -25,8 +27,8 @@
       position: absolute;
       width: 100%;
       height: 121px;
-      z-index: -1;
-      margin-top: -1px;
+      z-index: 1;
+      padding-bottom: 230px;
    }
 
    .roadmap-title {
@@ -55,7 +57,105 @@
       }
    }
 
-   .roadmap-timeline {
+   .roadmap-timeline-lists {
       margin-top: 70px;
+      position: relative;
+
+      ul {
+         list-style: none;
+         padding: 0;
+         margin: 0;
+
+         &:before {
+            content: "";
+            position: absolute;
+            left: 45%;
+            top: 0;
+            display: block;
+            width: 104px;
+            height: 100%;
+            background-image: url( './../img/timeline-tree-bg.png' );
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+         }
+
+         li {
+
+            &:nth-child(1) {
+               padding-top: 95px;
+            }
+            &:nth-child(2) {
+               margin-top: -25px;
+            }
+            &:nth-child(3) {
+               margin-top: 50px;
+            }
+            &:nth-child(4) {
+               margin-top: -30px;
+            }
+
+            &:after {
+               content: "";
+               display: block;
+               height: 0;
+               clear: both;
+               visibility: hidden;
+            }
+
+            .roadmap-timeline {
+               width: 412px;
+               height: 280px;
+               background: #FFFFFF;
+               border: 3px solid #000000;
+               border-radius: 83.3133px;
+               padding: 75px 96px 66px 48px;
+               position: relative;
+
+               .roadmap-timeline-img {
+                  position: absolute;
+                  top: -10%;
+                  right: 10%;
+                  width: 74.7px;
+                  height: 74.7px;
+                  border-radius: 50%;
+                  box-shadow: 0.5px 6px #000;
+               }
+
+               .roadmap-timeline-content {
+                  h5 {
+                     font-family: 'Ultra';
+                     font-style: normal;
+                     font-weight: 400;
+                     font-size: 25px;
+                     line-height: 47px;
+                     letter-spacing: 0.444338px;
+                     color: #000000;
+                     margin-bottom: 14px;
+                  }
+                  p {
+                     font-family: 'DM Sans';
+                     font-style: normal;
+                     font-weight: 500;
+                     font-size: 16px;
+                     line-height: 26px;
+                     letter-spacing: 0.444338px;
+                     color: #000000;
+                     margin-bottom: 0;
+                  }
+               }
+
+               &.direction-l {
+                  float: left;
+               }
+
+               &.direction-r {
+                  float: right;
+               }
+
+               
+            }
+         }
+      }
    }
 }
