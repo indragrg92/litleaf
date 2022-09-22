@@ -4,7 +4,8 @@
    position: relative;
    background-color: #fffdf0;
    padding-bottom: 195px;
-
+   
+   
    &:before {
       content: "";
       background: url('./../img/nft-reveal-top-bg.png');
@@ -14,7 +15,7 @@
       position: absolute;
       top: -5%;
       width: 100%;
-      height: 100%;
+      height: 134px;
    }
 
    &:after {
@@ -24,11 +25,11 @@
       background-position: bottom;
       background-size: 100%;
       position: absolute;
+      bottom: -5.5%;
       width: 100%;
-      height: 15%;
+      height: 128px;
       z-index: 1;
    }
-   
 
    .nft-circle {
       @include roundShape();
@@ -44,11 +45,13 @@
    .nft-bottom-arrow {
       background-image: url( './../img/spiral-left-arrow.svg' );
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: 75%;
       position: absolute;
-      bottom: 0;
+      left: 20%;
+      bottom: -93px;
       width: 250px;
       height: 307px;
+      z-index: 9;
    }
 
    .join-wailist {
