@@ -105,6 +105,9 @@
          text-transform: capitalize;
          color: #2F5B0C;
          margin-bottom: 7px;
+         background: -webkit-linear-gradient(-90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 90%);
+         -webkit-background-clip: text;
+         -webkit-text-stroke: 6.61px transparent;
       }
 
       h3 {
@@ -113,11 +116,13 @@
          font-weight: 400;
          font-size: 70px;
          line-height: 84px;
-         letter-spacing: 0.533333px;
+         letter-spacing: -1.5px;
          text-transform: capitalize;
-         color: #FFFFFF;
-         text-shadow: 0px 6px #000000;
+         color: #fff;
          margin-bottom: 36px;
+         -webkit-text-stroke: 3px #000;
+         text-shadow: -2px 8px #000;
+         text-align: left;
       }
 
       h6 {

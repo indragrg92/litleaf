@@ -54,6 +54,23 @@
       z-index: 9;
    }
 
+   .nft-text-right {
+      font-family: 'Ultra';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 199.451px;
+      line-height: 239px;
+      text-align: center;
+      letter-spacing: 0.886448px;
+      text-transform: capitalize;
+      color: #2F5B0C;
+      opacity: 0.05;
+      transform: rotate(-90deg);
+      position: absolute;
+      right: -41%;
+      top: 47%;
+   }
+
    .join-wailist {
       position: relative;
 
@@ -183,6 +200,7 @@
          color: #2F5B0C;
          margin-top: -105px;
          margin-left: -72px;
+         -webkit-text-stroke: 5px #FFFDF0;
       }
    }
 

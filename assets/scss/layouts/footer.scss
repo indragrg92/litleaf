@@ -41,6 +41,17 @@ footer {
       transform: translate(-52%, -188%);
    }
 
+   .footer-top-right-leaf {
+      background-image: url('./../img/footer-right-top-leaf.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: -50%;
+      right: 0px;
+      width: 220px;
+      height: 358px;
+   }
+
    .footer-logo {
       position: absolute;
       top: 50%;

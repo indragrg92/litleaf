@@ -42,6 +42,9 @@
          letter-spacing: 0.819829px;
          text-transform: capitalize;
          color: #2F5B0C;
+         background: -webkit-linear-gradient(-90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 90%);
+         -webkit-background-clip: text;
+         -webkit-text-stroke: 6.61px transparent;
       }
       h2 {
          font-family: 'Ultra';
@@ -53,6 +56,8 @@
          letter-spacing: 0.533333px;
          text-transform: capitalize;
          color: #FFFFFF;
+         -webkit-text-stroke: 3px #000;
+         text-shadow: 0 15px #000;
       }
    }
 

@@ -69,6 +69,9 @@
          text-transform: capitalize;
          color: #2F5B0C;
          margin-bottom: 0;
+         background: -webkit-linear-gradient(-90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 90%);
+         -webkit-background-clip: text;
+         -webkit-text-stroke: 6.61px transparent;
       }
       h2 {
          font-family: 'Ultra';
@@ -81,6 +84,8 @@
          text-transform: capitalize;
          color: #FFFFFF;
          margin-bottom: 0;
+         -webkit-text-stroke: 3px #000;
+         text-shadow: 0px 15px #000;
       }
    }
    .join-btn {

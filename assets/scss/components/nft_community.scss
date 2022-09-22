@@ -27,6 +27,9 @@
          text-transform: capitalize;
          color: #2F5B0C;
          margin-bottom: 25px;
+         background: -webkit-linear-gradient(-90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 90%);
+         -webkit-background-clip: text;
+         -webkit-text-stroke: 6.61px transparent;
       }
       h2 {
          font-family: 'Ultra';
@@ -39,6 +42,7 @@
          text-transform: capitalize;
          color: #FFFFFF;
          margin-bottom: 42px;
+         text-shadow: 0px 15px #000;
       }
       h6 {
          font-family: 'DM Sans';
