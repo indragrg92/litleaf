@@ -43,6 +43,7 @@
          text-transform: capitalize;
          color: #2F5B0C;
          background: -webkit-linear-gradient(-90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 90%);
+         background-clip: text;
          -webkit-background-clip: text;
          -webkit-text-stroke: 6.61px transparent;
       }
