@@ -282,6 +282,12 @@
                border-bottom-left-radius: 100px;
                border-right: 0;
 
+               &:focus,
+               &:focus-visible {
+                  border-color: #000000;
+                  outline: #000000;
+               }
+
                @media(max-width: 767px) {
                   font-size: 14px;
                   padding: 20px;
