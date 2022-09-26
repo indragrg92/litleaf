@@ -38,7 +38,16 @@ header {
          width: 22%;
 
          & > img {
-            max-width: 124px;
+            max-width: 100%;
+         }
+         @media(max-width: 991px) {
+            order: 1;
+         }
+      }
+
+      .navbar-toggler {
+         @media(max-width: 991px) {
+            order: 2;
          }
       }
 
@@ -46,6 +55,10 @@ header {
          list-style: none;
          padding: 0;
          margin: 0;
+
+         @media(max-width: 991px) {
+            display: none;
+         }
 
          li {
             display: inline-block;

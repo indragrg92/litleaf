@@ -10,6 +10,10 @@
       filter: blur(25px);
       position: absolute;
       top: -45px;
+
+      @media(max-width: 991px) {
+         top: -65px;
+      }
    }
 
    .nft-community-title {
@@ -26,11 +30,16 @@
          letter-spacing: 0.819829px;
          text-transform: capitalize;
          color: #2F5B0C;
-         margin-bottom: 25px;
+         margin-bottom: 40px;
          background: -webkit-linear-gradient(-90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 90%);
          background-clip: text;
          -webkit-background-clip: text;
          -webkit-text-stroke: 6.61px transparent;
+
+         @media(max-width: 1199px) {
+            font-size: 26px;
+            line-height: 48px;
+         }
       }
       h2 {
          font-family: 'Ultra';
@@ -42,8 +51,25 @@
          letter-spacing: 0.533333px;
          text-transform: capitalize;
          color: #FFFFFF;
-         margin-bottom: 42px;
+         margin-bottom: 54px;
          text-shadow: 0px 15px #000;
+         -webkit-text-stroke: 3px #000;
+
+         @media(max-width:1680px) {
+            font-size: 80px;
+            line-height: 90px;
+         }
+         @media(max-width:1199px) {
+            font-size: 48px;
+            line-height: 60px;
+            text-shadow: 0px 6px #000;
+            -webkit-text-stroke: 2px #000;
+            margin-bottom: 25px;
+         }
+         @media(max-width: 575px) {
+            font-size: 38px;
+            line-height: 44px;
+         }
       }
       h6 {
          font-family: 'DM Sans';
@@ -54,8 +80,16 @@
          text-align: center;
          letter-spacing: 0.533333px;
          color: #000000;
-         max-width: 75%;
          margin: 0 auto;
+
+         @media(min-width: 768px) {
+            max-width: 75%;
+         }
+
+         @media(max-width:1199px) {
+            font-size: 14px;
+            line-height: 26px;
+         }
       }
 
       .community-spiral-arrow{
@@ -67,6 +101,18 @@
          position: absolute;
          right: -3%;
          bottom: -15%;
+
+         @media(max-width: 1680px) {
+            right: -5%;
+         }
+         @media(max-width:1199px) {
+            // width: 120px;
+            // height: 162px;
+            // background-size: contain;
+            // bottom: -32%;
+            // right: -10%;
+            display: none;
+         }
       }
    }
 
@@ -77,13 +123,25 @@
          position: relative;
          margin-left: 18px;
          background: #FFFFFF;
-         border: 3px solid #000000;
          border-radius: 100px;
          padding: 155px 183px 148px 90px;
          box-shadow: -4px 15px #000;
          margin-bottom: 125px;
          height: 432px;
          border: 4px solid #000;
+
+
+         @media(max-width:1199px) {
+            padding: 80px;
+         }
+         @media(max-width:991px) {
+            height: auto;
+            padding: 100px 150px;
+            margin-bottom: 100px;
+         }
+         @media(max-width:767px) {
+            padding: 80px 50px;
+         }
 
          &:after {
             content: "";
@@ -101,6 +159,15 @@
                bottom: -5px;
                right: -1px;
                height: 243px;
+
+               @media(max-width: 1199px) {
+                  width: 100px;
+                  bottom: 4px;
+                  right: 13px;
+                  height: 100px;
+                  border-bottom-right-radius: 65%;
+               }
+               
             }
          }
          &.list-2 {
@@ -110,6 +177,14 @@
                bottom: -3px;
                width: 221px;
                height: 299px;
+
+               @media(max-width: 1199px) {
+                  width: 100px;
+                  bottom: 5px;
+                  right: -12px;
+                  height: 100px;
+                  border-bottom-right-radius: 100%;
+               }
             }
          }
          &.list-3 {
@@ -119,6 +194,14 @@
                bottom: -5px;
                right: -1px;
                height: 243px;
+
+               @media(max-width: 1199px) {
+                  width: 100px;
+                  bottom: 4px;
+                  right: 13px;
+                  height: 100px;
+                  border-bottom-right-radius: 65%;
+               }
             }
          }
          &.list-4 {
@@ -128,6 +211,14 @@
                bottom: -3px;
                width: 221px;
                height: 299px;
+
+               @media(max-width: 1199px) {
+                  width: 100px;
+                  bottom: 5px;
+                  right: -12px;
+                  height: 100px;
+                  border-bottom-right-radius: 100%;
+               }
             }
          }
 
@@ -136,6 +227,15 @@
             width: 700px;
             height: 600px;
             z-index: -1;
+
+            @media(max-width: 991px) {
+               width: 400px;
+               height: 400px;
+            }
+            @media(max-width: 575px) {
+               width: 280px;
+               height: 500px;
+            }
          }
 
          .nft-community-list-img {
@@ -146,6 +246,20 @@
             height: 137px;
             border-radius: 50%;
             box-shadow: 1px 12px #000;
+
+            @media(max-width:1199px) {
+               width: 100px;
+               height: 100px;
+
+               img {
+                  width: 100%;
+               }
+            }
+            @media(max-width:575px) {
+               width: 75px;
+               height: 75px;
+               top: -40px;
+            }
          }
 
          .nft-community-list-content {
@@ -158,6 +272,22 @@
                letter-spacing: 0.533333px;
                color: #000000;
                margin: 0;
+               text-align: left;
+
+               @media(max-width:1199px) {
+                  font-size: 14px;
+                  line-height: 26px;
+               }
+            }
+         }
+
+         @media(max-width: 575px) {
+            &:after {
+               width: 65px!important;
+               bottom: -6px!important;
+               right: 23px!important;
+               height: 83px!important;
+               border-bottom-right-radius: 75%!important;
             }
          }
       }

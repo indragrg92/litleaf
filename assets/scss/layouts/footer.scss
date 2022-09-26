@@ -14,6 +14,17 @@ footer {
       width: 100%;
       height: 174px;
       
+
+      @media(max-width:1199px) {
+         background-size: contain;
+         top: -120px;
+      }
+      @media(max-width:767px) {
+         top: -105px;
+      }
+      @media(max-width: 389px) {
+         top: -95px;
+      }
    }
 
    .footer-circle {
@@ -27,6 +38,20 @@ footer {
       left: 50%;
       z-index: -2;
       transform: translate(-51%, -110%);
+
+      @media(max-width:1199px) {
+         width: 500px;
+         height: 500px;
+         transform: translate(-51%, -100%);
+      }
+      @media(max-width: 767px) {
+         width: 300px;
+         height: 300px;
+         transform: translate(-51%, -112%);
+      }
+      @media(max-width: 575px) {
+         transform: translate(-51%, -90%);
+      }
    }
 
    .footer-circle-blur {
@@ -39,6 +64,23 @@ footer {
       left: 50%;
       top: 50%;
       transform: translate(-52%, -188%);
+
+      @media(max-width:1199px) {
+         width: 450px;
+         height: 190px;
+         top: 32%;
+      }
+      @media(max-width: 767px) {
+         width: 250px;
+         height: 200px;
+         top: 75%;
+      }
+      @media(max-width: 575px) {
+         top: 120%;
+      }
+      @media(max-width: 350px) {
+         top: 110%;
+      }
    }
 
    .footer-top-right-leaf {
@@ -50,6 +92,18 @@ footer {
       right: 0px;
       width: 220px;
       height: 358px;
+
+      @media(max-width: 1199px) {
+         width: 92px;
+         height: 150px;
+         background-size: contain;
+         top: -32%;
+      }
+      @media(max-width: 575px) {
+         width: 50px;
+         height: 95px;
+         top: -40%;
+      }
    }
 
    .footer-logo {
@@ -58,6 +112,26 @@ footer {
       left: 50%;
       transform: translate(-50%, -118%);
       width: 581px;
+
+      @media(max-width:1199px) {
+
+         transform: translate(-35%, -120%);
+
+         img {
+            max-width: 400px;
+         }
+      }
+      @media(max-width: 767px) {
+         transform: translate(-60%, -160%);
+         width: 200px;
+
+         img {
+            max-width: 200px;
+         }
+      }
+      @media(max-width: 575px) {
+         transform: translate(-60%, -125%);
+      }
    }
 
    .footer-text {
@@ -77,13 +151,29 @@ footer {
          text-transform: capitalize;
          color: #87BF5A;
          opacity: 0.2;
+         margin-bottom: 0px;
+         
       } 
 
       .left {
          width: 77%;
          h1 {
             margin-left: -5%;
+
+            @media(max-width: 1807px) {
+               font-size: 180px;
+            }
+            @media(max-width: 1680px) {
+               font-size: 150px;
+               margin-left: -18%;
+            }
+            @media(max-width: 1250px) {
+               font-size: 120px;
+               margin-left: -13%;
+            }
          }
+
+        
       }
 
       .middle {
@@ -95,12 +185,31 @@ footer {
             opacity: 0.2;
             border-radius: 50%;
          }
+
+
+         @media(max-width: 1250px) {
+            width: 5%;
+         }
       }
 
       .right {
          h1 {
             margin-right: -70%;
+
+            @media(max-width: 1807px) {
+               font-size: 180px;
+            }
+            @media(max-width: 1680px) {
+               font-size: 150px;
+            }
+            @media(max-width: 1250px) {
+               font-size: 120px;
+            }
          }
+      }
+
+      @media(max-width:1199px) {
+         display: none;
       }
          
    }
@@ -109,8 +218,24 @@ footer {
       padding-top: 162px;
       padding-bottom: 125px;
 
+      @media(max-width: 1199px) {
+         padding-bottom: 75px;
+      }
+      @media(max-width: 767px) {
+         padding-top: 80px;
+      }
+      @media(max-width: 575px) {
+         padding-top: 25px;
+         padding-bottom: 25px;
+      }
+
       .footer-copyright {
          text-align: center;
+
+         @media(max-width: 1199px) {
+            margin-top: 34px;
+         }
+
          h4 {
             font-family: 'Ultra';
             font-style: normal;
@@ -121,6 +246,15 @@ footer {
             text-transform: capitalize;
             color: #000000;
             margin-bottom: 0;
+
+            @media(max-width: 991px) {
+               font-size: 26px;
+               line-height: 48px;
+            }
+            @media(max-width: 575px) {
+               font-size: 22px;
+               line-height: 38px;
+            }
          }
       }
 
@@ -152,6 +286,12 @@ footer {
                   justify-content: center;
                   text-decoration: none;
                   box-shadow: 0px 9.4px #000;
+
+                  @media(max-width: 1199px) {
+                     width: 50px;
+                     height: 50px;
+                     box-shadow: 0px 4px #000;
+                  }
 
                   i {
                      font-size: 24px;

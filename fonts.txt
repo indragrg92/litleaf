@@ -12,4 +12,87 @@ h6 - 20px
 
 p - 16px
 
-57
+1750
+h1 - 140px;
+h2 - 100px;
+h3 - 
+h4 - 
+h5 - 
+h6 - 
+
+from 1650px responsive
+
+@media(max-width:1317px) {
+   h1 {
+      font-size: 80px
+   }
+   h2 {
+      font-size: 60px
+   }
+}
+
+@media(max-width:991px) {
+   h1 {
+      font-size: 62px;
+   }
+   h2 {
+      font-size: 48px;
+      line-height: 62px;
+      text-shadow: 0px 5px #000;
+      -webkit-text-stroke: 2px #000;
+   }
+   h3 {
+      font-size: 40px;
+      line-height: 48px;
+   }
+   h4 {
+      font-size: 26px;
+      line-height: 48px;
+   }
+   h5 {
+      font-size: 18px;
+      line-height: 30px;
+   }
+   h6 {
+      font-size: 14px;
+      line-height: 26px;
+   }
+   p {
+      font-size: 14px;
+      line-height: 26px;
+   }
+
+}
+@media(max-width:575px) {
+   h1 {
+      font-size: 46px;
+      line-height: 65px;
+   }
+   h2 {
+      font-size: 38px;
+      line-height: 44px;
+      text-shadow: 0px 5px #000;
+      -webkit-text-stroke: 2px #000;
+   }
+   h3 {
+      font-size: 32px;
+      line-height: ;
+   }
+   h4 {
+      font-size: 22px;
+      line-height: 38px;
+   }
+   h5 {
+      font-size: 16px;
+      line-height: ;
+   }
+   h6 {    
+      font-size: 14px;
+      line-height: 26px;
+   }
+   p {
+      font-size: 12px;
+      line-height: 21px;
+   }
+
+}

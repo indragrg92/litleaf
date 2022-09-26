@@ -1,6 +1,4 @@
-$(document).ready(function () {
-
-});
+$(document).ready(function () { });
 
 jQuery( document ).on( 'click', '.smooth-scroll', function( e ) {
 

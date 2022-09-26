@@ -1,22 +1,31 @@
 .btn-primary {
-   background: #FFFFFF;
-   border: 3px solid #000000;
-   border-radius: 100px;
-   font-family: 'Ultra';
-   font-style: normal;
-   font-weight: 400;
-   font-size: 20px;
-   line-height: 24px;
-   text-align: center;
-   letter-spacing: 0.819829px;
-   text-transform: capitalize;
-   color: #2F5B0C;
-   padding: 28px 65px;
-   box-shadow: 0px 10px #000;
+    background: #FFFFFF;
+    border: 3px solid #000000;
+    border-radius: 100px;
+    font-family: 'Ultra';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.819829px;
+    text-transform: capitalize;
+    color: #2F5B0C;
+    padding: 28px 65px;
+    box-shadow: 0px 10px #000;
 
-   &:hover {
-       background-color: #FFFFFF!important;
-       border-color: #000000!important;
-       color: #2F5B0C!important;
-   }
+    &:hover {
+        background-color: #FFFFFF !important;
+        border-color: #000000 !important;
+        color: #2F5B0C !important;
+    }
+
+    @media(max-width:1199px) {
+        font-size: 14px;
+        padding: 20px 50px;
+    }
+    @media(max-width:375px) {
+        font-size: 12px;
+        padding: 15px 30px;
+    }
 }
