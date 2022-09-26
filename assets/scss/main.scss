@@ -4,6 +4,9 @@ body {
    background-color: #FFBF2D;
    overflow-x: hidden;
 }
+body.menu-active {
+   overflow: hidden;
+}
 
 @import './fonts';
 
