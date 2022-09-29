@@ -93,16 +93,31 @@ footer {
       width: 220px;
       height: 358px;
 
+      @media(max-width: 1680px) {
+         top: -51%;
+      }
+      @media(max-width: 1450px) {
+         top: -53%;
+      }
       @media(max-width: 1199px) {
          width: 92px;
          height: 150px;
          background-size: contain;
-         top: -32%;
+         top: -37.5%;
+      }
+      @media(max-width: 991px) {
+         top: -40%;
       }
       @media(max-width: 575px) {
          width: 50px;
          height: 95px;
-         top: -40%;
+         top: -43%;
+      }
+      @media(max-width: 389px) {
+         top: -36%;
+      }
+      @media(max-width: 321px) {
+         top: -30%;
       }
    }
 
@@ -184,9 +199,15 @@ footer {
             background: #87BF5A;
             opacity: 0.2;
             border-radius: 50%;
+            margin: 0 auto;
          }
 
-
+         @media(max-width: 1680px) {
+            width: 8%;
+         }
+         @media(max-width: 1350px) {
+            width: 3%;
+         }
          @media(max-width: 1250px) {
             width: 5%;
          }
@@ -290,7 +311,8 @@ footer {
                   @media(max-width: 1199px) {
                      width: 50px;
                      height: 50px;
-                     box-shadow: 0px 4px #000;
+                     box-shadow: 0px 2px #000;
+                     border: 2px solid #000;
                   }
 
                   i {

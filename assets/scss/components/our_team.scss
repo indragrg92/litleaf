@@ -25,17 +25,10 @@
          right: -14%;
          bottom: 32%;
       }
-      @media(max-width: 1500px) {
-         line-height: 150px;
-         right: -16%;
-      }
-      @media(max-width: 1406px) {
-         font-size: 160px;
-         right: -15%;
-      }
-      @media(max-width: 1350px) {
+      @media(max-width: 1450px) {
          font-size: 140px;
-         right: -13%;
+         right: -12%;
+         line-height: 110px;
       }
       @media(max-width: 1250px) {
          right: -13%;
@@ -108,7 +101,7 @@
 
          img {
             border-radius: 60px;
-
+            
             @media(max-width: 575px) {
                width: 80%;
             }
@@ -117,6 +110,10 @@
          &.has-shadow {
             img {
                box-shadow: 12.75px 14.92px #000;
+
+               @media(max-width: 1199px) {
+                  box-shadow: 10.75px 10.92px #000;
+               }
             }
          }
 

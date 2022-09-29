@@ -60,6 +60,9 @@
       @media(max-width: 1406px) {
          bottom: -3.5%;
       }
+      @media(max-width: 1350px) {
+         bottom: -4.5%;
+      }
       @media(max-width: 1199px) {
          bottom: -5%;
       }
@@ -92,12 +95,21 @@
       z-index: -1;
 
       @media(max-width:1680px) {
-         top: 52%;
+         top: 56%;
+      }
+      @media(max-width:1500px) {
+         top: 60%;
+      }
+      @media(max-width:1250px) {
+         top: 65%;
       }
       @media(max-width:1199px) {
          width: 500px;
          height: 500px;
          top: 67%;
+      }
+      @media(max-width: 991px) {
+         top: 76%;
       }
       @media(max-width: 767px) {
          width: 300px;
@@ -107,6 +119,9 @@
       @media(max-width: 575px) {
          top: 55%;
       }
+      @media(max-width: 348px) {
+         top: 50%;
+      }
    }
 
    .nft-circle-blur {
@@ -114,7 +129,10 @@
       transform: translate(-50%, -400%);
 
       @media(max-width:1680px) {
-         top: 52%;
+         top: 56%;
+      }
+      @media(max-width:1500px) {
+         top: 60%;
       }
       @media(max-width:1199px) {
          width: 450px;
@@ -143,10 +161,13 @@
       z-index: 9;
       
       @media(max-width: 1680px) {
-         left: 21%;
+         left: 19%;
          bottom: -32px;
          width: 250px;
          height: 290px;
+      }
+      @media(max-width: 1500px) {
+         left: 16%;
       }
       @media(max-width: 1199px) {
          background-size: 60%;
@@ -175,29 +196,30 @@
       position: absolute;
       right: -41%;
       top: 47%;
+      overflow: hidden;
 
       @media(max-width: 1807px) {
          right: -44%;
       }
       @media(max-width: 1750px) {
-         right: -45%;
-         line-height: 1;
-         top: 50%;
+         right: -44%;
+         line-height: 128px;
+         top: 47%;
+         font-size: 180px;
       }
       @media(max-width: 1600px) {
-         right: -50%;
+         right: -46%;
       }
       @media(max-width: 1500px) {
-         right: -53%;
+         right: -50%;
          line-height: 150px;
       }
-      @media(max-width: 1406px) {
-         font-size: 160px;
-         right: -45%;
+      @media(max-width: 1450px) {
+         font-size: 140px;
+         right: -39%;
       }
       @media(max-width: 1350px) {
-         font-size: 140px;
-         right: -41%;
+         right: -42%;
       }
       @media(max-width: 1250px) {
          font-size: 120px;
@@ -246,6 +268,13 @@
          @media(max-width: 575px) {
             left: 17%;
          }
+         @media(max-width: 375px) {
+            left: 12%;
+         }
+         @media(max-width: 330px) {
+            left: 7%;
+         }
+         
       }
 
       .joinbox-form {
@@ -391,10 +420,7 @@
       margin-top: -5%;
 
       @media(max-width:1680px) {
-         margin-top: -15%;
-      }
-      @media(max-width:1680px) {
-         margin-top: -5%;
+         margin-top: -12%;
       }
 
       h4 {
@@ -445,10 +471,7 @@
          -webkit-text-stroke: 5px #FFFDF0;
 
          @media(max-width: 1680px) {
-            font-size: 140px;
-         }
-         @media(max-width: 1680px) {
-            font-size: 110px;
+            font-size: 130px;
          }
          @media(max-width: 1199px) {
             font-size: 62px;
@@ -461,6 +484,9 @@
             font-size: 46px;
             line-height: 65px;
             margin-top: -30px;
+         }
+         @media(max-width: 368px) {
+            margin-left: 0;
          }
       }
    }
@@ -487,9 +513,38 @@
                border-radius: 30%;
                width: 400.5px;
                height: 438.1px;
-
                
-               
+               @media(max-width: 1800px) {
+                  width: 372px;
+                  height: 420px;
+               }
+               @media(max-width: 1700px) {
+                  width: 348px;
+                  height: 400px;
+               }
+               @media(max-width: 1680px) {
+                  width: 345px;
+                  height: 360px;
+               }
+               @media(max-width: 1600px) {
+                  width: 325px;
+               }
+               @media(max-width: 1500px) {
+                  width: 300px;
+                  height: 350px;
+               }
+               @media(max-width: 1450px) {
+                  width: 290px;
+                  height: 310px;
+               }
+               @media(max-width: 1350px) {
+                  width: 268px;
+                  height: 300px;
+               }
+               @media(max-width: 1200px) {
+                  width: 235px;
+                  height: 260px;
+               }
                @media(max-width: 1199px) {
                   width: 235px;
                   height: auto;

@@ -131,16 +131,16 @@
          line-height: 1;
          left: -33%;
       }
+      @media(max-width:1680px) {
+         font-size: 120px;
+         left: -20%;
+      }
       @media(max-width:1600px) {
          left: -36%;
       }
-      @media(max-width:1500px) {
-         left: -40%;
-         line-height: 150px;
-      }
-      @media(max-width:1406px) {
-         font-size: 160px;
-         left: -33%;
+      @media(max-width:1450px) {
+         font-size: 140px;
+         left: -29%;
       }
       @media(max-width:1350px) {
          font-size: 140px;
@@ -261,6 +261,7 @@
 
                @media(max-width: 1199px) {
                   width: 100%;
+                  box-shadow: -8px 6px #000;
                }
                @media(max-width: 575px) {
                   padding: 75px 50px;

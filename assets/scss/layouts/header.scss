@@ -21,12 +21,15 @@ header {
                   font-family: 'DM Sans Medium';
                   font-style: normal;
                   font-weight: 500;
-                  font-size: 16px;
-                  line-height: 21px;
                   letter-spacing: 0.533333px;
                   text-transform: capitalize;
                   color: #000000;
                   padding: 0;
+
+                  @media(min-width: 1200px) {
+                     font-size: 16px;
+                     line-height: 21px;
+                  }
                }
             }
          }
@@ -85,6 +88,10 @@ header {
                   font-size: 22px;
                }
 
+               @media(max-width: 1199px) {
+                  box-shadow: 0px 4px #000;
+               }
+
             }
          }
       }
@@ -92,6 +99,8 @@ header {
 
 
 }
+
+
 
 @media(max-width: 991px) {
    header .hamburger-menu {

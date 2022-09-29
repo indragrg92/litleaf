@@ -54,8 +54,14 @@
          @media(max-width: 1650px) {
             right: -42px;
          }
+         @media(max-width: 1600px) {
+            right: -60px;
+         }
          @media(max-width: 1500px) {
             right: -95px;
+         }
+         @media(max-width: 1450px) {
+            right: -110px;
          }
          @media(max-width: 1400px) {
             right: -128px;
@@ -65,7 +71,7 @@
             bottom: -106px;
          }
          @media(max-width: 1250px) {
-            right: 20px;
+            right: 28px;
          }
          @media(max-width: 1200px) {
             right: 12px;
