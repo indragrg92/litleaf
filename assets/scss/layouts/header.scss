@@ -38,10 +38,13 @@ header {
       .navbar-brand {
 
          margin-right: 0;
-         width: 22%;
 
          &>img {
             max-width: 100%;
+
+            @media(max-width: 991px) {
+               max-width: 65%;
+            }
          }
 
          @media(max-width: 991px) {
@@ -107,7 +110,7 @@ header {
       position: relative;
       width: 25px;
       height: 22px;
-      top: 33px;
+      top: 0px;
       right: 20px;
       -webkit-transition-duration: .5s;
       -o-transition-duration: .5s;
@@ -123,7 +126,7 @@ header {
       position: absolute;
       height: 3px;
       width: 25px;
-      top: 0;
+      top: 10px;
       -webkit-border-radius: 4px;
       border-radius: 4px;
       background: #0f3a51;
@@ -186,7 +189,7 @@ header {
       -o-transition: .3s ease all;
       transition: .3s ease all;
       overflow-y: scroll;
-      padding-top: 205px;
+      padding-top: 130px;
       padding-bottom: 20px;
       padding-right: calc(var(--bs-gutter-x) * .5);
       padding-left: calc(var(--bs-gutter-x) * .5);
@@ -228,20 +231,5 @@ header {
 @media(max-width:767px) {
    header #navbarSupportedContent>ul {
       max-width: 540px;
-   }
-}
-@media(max-width:425px) {
-   header nav.navbar #navbarSupportedContent {
-      padding-top: 150px;
-   }
-}
-@media(max-width:375px) {
-   header nav.navbar #navbarSupportedContent {
-      padding-top: 125px;
-   }
-}
-@media(max-width:320px) {
-   header nav.navbar #navbarSupportedContent {
-      padding-top: 100px;
    }
 }

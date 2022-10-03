@@ -57,3 +57,9 @@ jQuery( document ).on( 'click', '.smooth-scroll', function( e ) {
       });
     } 
 } );
+
+jQuery(document).on( 'submit', '#joinbox-form', function(e) {
+    location.href = 'https://www.premint.xyz/litleaf';
+
+    return false;
+} );
